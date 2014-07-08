@@ -7,4 +7,8 @@ class Wizard
   def bearded?
 
   end
+
+  def incantation(command)
+    "sudo #{command}"
+  end
 end

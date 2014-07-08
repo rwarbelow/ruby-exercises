@@ -6,8 +6,12 @@ class Medusa
   end
 
   def stare(victim)
-    victim.stoned = true
+    stone_victim(victim)
     @statues.push(victim)
+  end
+
+  def stone_victim(victim)
+    victim.stoned = true
   end
 end
 
